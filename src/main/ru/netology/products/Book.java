@@ -1,5 +1,3 @@
-package ru.netology.products;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -15,5 +13,3 @@ public class Book extends Product {
         super(id, nameProduct, price);
         this.author = author;
     }
-
-}
