@@ -13,4 +13,8 @@ public class Product {
 
     public Product() {
     }
+
+    public boolean matches(String search) {
+        return nameProduct.equals(search);
+    }
 }
