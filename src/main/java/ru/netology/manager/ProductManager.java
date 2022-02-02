@@ -1,3 +1,4 @@
+package ru.netology.manager;
 
 import ru.netology.products.Book;
 import ru.netology.products.Product;

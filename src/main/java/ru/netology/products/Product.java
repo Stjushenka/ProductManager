@@ -14,7 +14,7 @@ public class Product {
     public Product() {
     }
 
-    public boolean matches(String search) {
+    public boolean Product(String search) {
         return nameProduct.equals(search);
     }
 }
