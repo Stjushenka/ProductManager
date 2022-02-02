@@ -17,6 +17,8 @@ public class ProductManagerTest {
     private Product third = new Book(3, "Удушье", 200, "Чак Паланик");
     private Product fourth = new Smartphone(4, "iPhone9", 21000, "Apple");
     private Product fifth = new Book(5, "Понедельник начинается в субботу", 450, "Стругацкие");
+    private Product sixth = new Book(3, "Проклятые", 200, "Чак Паланик");
+
 
     @BeforeEach
     void setUp() {
@@ -25,6 +27,7 @@ public class ProductManagerTest {
         manager.add(third);
         manager.add(fourth);
         manager.add(fifth);
+        manager.add(sixth);
     }
 
     @Test
@@ -57,8 +60,15 @@ public class ProductManagerTest {
 
     @Test
     public void shouldNotFindAuthor() {
-        Product[] expected = {first};
-        Product[] actual = manager.searchBy("Булгаков");
+        Product[] expected = {};
+        Product[] actual = manager.searchBy("Фет");
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldFindTwoBooks() {
+        Product[] expected = {third, sixth};
+        Product[] actual = manager.searchBy("Чак Паланик");
         assertArrayEquals(expected, actual);
     }
 
