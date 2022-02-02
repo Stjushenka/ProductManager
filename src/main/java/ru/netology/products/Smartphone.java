@@ -18,6 +18,6 @@ public class Smartphone extends Product {
         if (super.matches(search)) {
             return true;
         }
-        return producerSmart.equals(search);
+        return producerSmart.contains(search);
     }
 }

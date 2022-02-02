@@ -15,6 +15,6 @@ public class Product {
     }
 
     public boolean matches(String search) {
-        return nameProduct.equals(search);
+        return nameProduct.contains(search);
     }
 }
