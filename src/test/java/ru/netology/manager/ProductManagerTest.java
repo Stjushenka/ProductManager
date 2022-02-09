@@ -1,5 +1,8 @@
+package ru.netology.manager;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ru.netology.manager.ProductManager;
 import ru.netology.repo.ProductRepository;
 import ru.netology.products.Book;
 import ru.netology.products.Product;

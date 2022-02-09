@@ -14,10 +14,12 @@ public class Smartphone extends Product {
         this.producerSmart = producerSmart;
     }
 
+    @Override
     public boolean matches(String search) {
         if (super.matches(search)) {
             return true;
         }
+
         return producerSmart.contains(search);
     }
 }
