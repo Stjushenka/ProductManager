@@ -13,8 +13,4 @@ public class Product {
 
     public Product() {
     }
-
-    public boolean Product(String search) {
-        return nameProduct.equals(search);
-    }
 }
